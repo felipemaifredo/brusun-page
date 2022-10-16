@@ -3,12 +3,37 @@
 
 /* ROOTs */
 :root {
-    --cor-1 : #fff;
-    --cor-2 : #000;
-    --cor-3 : #4E7E18;
-    --cor-4 : #7FCC28;
-    --cor-5 : #EDCF13;
+    /* Colors*/
+        --cor-1 : #fff;
+        --cor-2 : #000;
+        --cor-3 : #4E7E18;
+        --cor-4 : #7FCC28;
+        --cor-5 : #EDCF13;
+    
+    /* Font Sizes */
+        --small : .8em;
+        --regular : 1em;
+        --big : 1.5em;
+
+    /* Transitions */
+        --hover-t : all .2s;
+        --normal-t : all 1s;
+
 }
+
+/*---- SCROLL -----*/
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+body::-webkit-scrollbar-track {
+    background-color: var(--cor-1); 
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor-3);
+    border-radius: 20px;
+    border: 3px solid var(--cor-1); 
+}
+/*---- FIM SCROLL -----*/
 
 /* Resets */
 * {
@@ -21,6 +46,7 @@ body {
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 /* -- WHATS ICON -- */
@@ -40,4 +66,164 @@ body {
 }
 
 /* -- WHATS ICON -- */
+/* NAV */
+ .nav-box {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--cor-1);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0px 3px 20px 0px var(--cor-3);
+}
+
+ nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+ }
+
+ .left-nav {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+    .logo-nav {
+        height: 70px;
+    }
+
+ .right-nav {
+    height: 100%;
+    width: 80%;
+ }
+    .right-nav-box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .right-nav-item {
+        list-style: none;
+    }
+        .right-nav-item > a {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--cor-3);
+            font-size: var(--normal-t);
+            padding: 10px;
+            transition: var(--normal-t);
+        }
+            .right-nav-item > a:hover {
+                transition: var(--hover-t);
+                transform: scale(1.2);
+            }
+
+            .right-nav-item > a:active {
+                transform: scale(.9);
+            }
+
+
+            .right-nav-item > a:visited {
+                font-weight: bold;
+                color: var(--cor-3);
+            }
+/* FIM NAV */
+/* SEC 1 */ 
+#sec1 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/imgs/wapp-solar.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box-sec1 {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+    .logo-content-box {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+        .logo-content-box img{
+            height: 200px;
+        }
+
+
+    .content-sec1 {
+        width: 100%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        text-transform: uppercase;
+    }
+        .content-sec1-text {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+            .content-sec1-text h1 {
+                font-size: 40px;
+                font-weight: 500;
+            }
+                .content-sec1-text .dest-sun {
+                    font-weight: 800;
+                }
+
+                .content-sec1-text .dest-energy {
+                    background-color: var(--cor-3);
+                    padding: 5px;
+                    color: var(--cor-1);
+                }
+        .content-sec1-btn {
+            height: 30%;
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+            .content-sec1-btn a {
+                font-size: 20px;
+                text-decoration: none;
+                color: var(--cor-3);
+                font-weight: 800;
+            }
+/* FIM SEC 1 */ 
+/* SEC 2 */ 
+#sec2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/imgs/wapp-solar.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+}
+/* FIM SEC 2 */ 
 
