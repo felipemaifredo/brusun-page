@@ -1,0 +1,43 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+/* ROOTs */
+:root {
+    --cor-1 : #fff;
+    --cor-2 : #000;
+    --cor-3 : #4E7E18;
+    --cor-4 : #7FCC28;
+    --cor-5 : #EDCF13;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* -- WHATS ICON -- */
+
+.whatsapp-butoon {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-butoon > a > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+/* -- WHATS ICON -- */
+
