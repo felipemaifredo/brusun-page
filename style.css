@@ -49,6 +49,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* -- WHATS ICON -- */
 
 .whatsapp-butoon {
@@ -114,7 +118,7 @@ body {
     .right-nav-item {
         list-style: none;
     }
-        .right-nav-item > a {
+        .right-nav-item > a, .right-nav-item > a:visited {
             display: inline-block;
             text-decoration: none;
             color: var(--cor-3);
@@ -131,11 +135,6 @@ body {
                 transform: scale(.9);
             }
 
-
-            .right-nav-item > a:visited {
-                font-weight: bold;
-                color: var(--cor-3);
-            }
 /* FIM NAV */
 /* SEC 1 */ 
 #sec1 {
@@ -208,7 +207,7 @@ body {
             justify-content: center;
         }
 
-            .content-sec1-btn a {
+            .content-sec1-btn a, .content-sec1-btn a:visited  {
                 font-size: 20px;
                 text-decoration: none;
                 color: var(--cor-3);
