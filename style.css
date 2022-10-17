@@ -138,7 +138,7 @@ nav {
 #sec1 {
     width: 100vw;
     height: 100vh;
-    background-image: url("/assets/imgs/wapp-solar.jpg");
+    background-image: url("assets/imgs/wapp-solar.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
