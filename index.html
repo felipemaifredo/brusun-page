@@ -12,13 +12,17 @@
 <body>
     <div class="nav-box"><!--INICIO NAV -->
         <a href="#sec1"><img src="assets/imgs/logo.png" alt="" class="logo-nav"></a>
-        <nav>
+        <nav id="nav">
+            <Button 
+                class="nav-btn" onclick="toggleMenu()">
+                <span class="btn-nav-icon"></span></Button>
+            </button>
             <ul class="nav-box-itens">
-                <li class="right-nav-item"><a href="#sec2">Quem Somos</a></li>
-                <li class="right-nav-item"><a href="#sec3">Vantagens</a></li>
-                <li class="right-nav-item"><a href="#sec3">Produtos</a></li>
-                <li class="right-nav-item"><a href="#sec4">Clientes</a></li>
-                <li class="right-nav-item"><a href="#sec5">Contato</a></li>
+                <li class="right-nav-item"><a href="#sec2" class="item-nav">Quem Somos</a></li>
+                <li class="right-nav-item"><a href="#sec3" class="item-nav">Vantagens</a></li>
+                <li class="right-nav-item"><a href="#sec3" class="item-nav">Produtos</a></li>
+                <li class="right-nav-item"><a href="#sec4" class="item-nav">Clientes</a></li>
+                <li class="right-nav-item"><a href="#sec5" class="item-nav">Contato</a></li>
             </ul>
         </nav>
     </div><!--FIM NAV -->
