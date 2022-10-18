@@ -364,6 +364,9 @@ html {
     }
     /* NAV */
     /* SEC 1 */
+    .slide-nav button img {
+       opacity: 0;
+    }
     /* TEXT SLIDE 1 */
 .text-slide1 {
     height: 200px;
