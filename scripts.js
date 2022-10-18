@@ -55,7 +55,7 @@ class SlideStories {
     }
     autoSlide() {
         clearTimeout(this.timeOut);
-        this.timeOut = setTimeout(this.next, 10000);
+        this.timeOut = setTimeout(this.next, 1000000);
     }
     init() {
         this.itens = this.slide.querySelectorAll('.slide-itens > *');
