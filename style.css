@@ -47,6 +47,7 @@ body::-webkit-scrollbar-thumb {
 }
 body {
     font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-style: italic;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
@@ -227,7 +228,7 @@ html {
         margin-left: 5px;
 
     }
-/* SLIDE 2 */
+/* SLIDE 3 */
 .text-slide3 {
     position: absolute;
     bottom: 30%;
@@ -249,6 +250,7 @@ html {
     font-size: 30px;
     color: white;
     padding: 0 10px;
+    margin-left: 5px;
 }
 .text-slide3 .slide1-text2 {
     background-color: var(--cor-5);
@@ -256,7 +258,6 @@ html {
     color: white;
     padding: 0 10px;
     font-weight: 900;
-    margin-left: 5px;
 
 }
 /* */
@@ -374,7 +375,6 @@ html {
 .text-slide3 .slide1-text2 {
     background-color: var(--cor-5);
     font-size: 20px;
-    margin-left: 3px;
 }
 /* */
     /* FIM SEC 1 */
