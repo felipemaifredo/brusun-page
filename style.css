@@ -218,6 +218,7 @@ html {
         font-size: 30px;
         color: white;
         padding: 0 10px;
+        letter-spacing: 5px;
     }
     .slide1-text2 {
         background-color: var(--cor-4);
@@ -251,6 +252,7 @@ html {
     color: white;
     padding: 0 10px;
     margin-left: 5px;
+    letter-spacing: 5px;
 }
 .text-slide3 .slide1-text2 {
     background-color: var(--cor-5);
