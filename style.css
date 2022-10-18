@@ -32,6 +32,13 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--cor-1); 
 }
 /*---- FIM SCROLL -----*/
+/*---- Key Frames animations ----*/
+@keyframes translateX-Animatio {
+    to {
+        transform: initial;
+    }
+}
+/*---- FIM Key Frames animations ----*/
 /* Resets */
 * {
     margin: 0;
@@ -105,6 +112,176 @@ html {
                         transform: scale(1);
                     }           
 /* FIM NAV */
+/* SEC 1 */ 
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+.img-box {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+    .img-box-1 {
+        background-image: url("./assets/imgs/solar1.jpg");
+    }
+    .img-box-2 {
+        background-image: url("./assets/imgs/solar2.jpg");
+    }
+    .img-box-3 {
+        background-image: url("./assets/imgs/solar3.jpg");
+    }
+    .img-box-4 {
+        background-image: url("./assets/imgs/solar4.jpg");
+    }
+.slide-itens {
+    position: relative;
+    grid-area: 1/1;
+}
+.slide-nav {
+    grid-area: 1/1;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 98% 1fr;
+}
+.slide-itens > * {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+.slide-itens > .active {
+    opacity: 1;
+    pointer-events: initial;
+    position: relative;
+}
+.slide-nav button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.slide-nav button img {
+    height: 50px;
+}
+.slide-thumb {
+    background-color: var(--cor-3);
+}
+.slide-thumb {
+    display: flex;
+    grid-column: 1 / 3;
+}
+.slide-thumb > span {
+    flex: 1;
+    display: block;
+    height: 3px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 5px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.slide-thumb > span.active::after {
+    content: "";
+    display: block;
+    height: inherit;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(-100%);
+    animation: translateX-Animatio 5s forwards linear;
+}
+/* TEXT SLIDE 1 */
+.text-slide1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    padding: 10px;
+    height: 200px;
+    width: 600px;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1s;
+}
+.active .text-slide1 {
+    opacity: 1;
+    transform: translateX(0%);
+}
+    .slide1-text1 {
+        background-color: var(--cor-3);
+        font-size: 40px;
+        padding: 10px;
+        color: var(--cor-1);
+    }
+    .slide1-text2 {
+        background-color: var(--cor-3);
+        display: block;
+        font-size: 70px;
+        padding: 10px;
+        color: var(--cor-1);
+        margin-top: 20px;
+    }
+        
+.text-slide2 {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+    margin-left: 100px;
+}
+    .slide2-text1, .slide2-text4{
+        color: var(--cor-1);
+        background-color: var(--cor-5);
+        display: inline-block;
+        font-size: 30px;
+        padding: 10px;
+        margin: 5px;
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    .slide2-text2, .slide2-text3 {
+        color: var(--cor-1);
+        background-color: var(--cor-5);
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px;
+        margin: 3px;
+        opacity: 0;
+        transform: translateX(50%);
+    }
+        .active .slide2-text1 {
+            opacity: 1;
+            transform: translateX(0%);
+            transition: all 1s;
+        }
+        .active .slide2-text2 {
+            opacity: 1;
+            transform: translateX(0%);
+            transition: all 1s;
+            transition-delay: 1s;
+        }
+        .active .slide2-text3 {
+            opacity: 1;
+            transform: translateX(0%);
+            transition: all 1s;
+            transition-delay: 1.2s;
+        }
+        .active .slide2-text4 {
+            opacity: 1;
+            transform: translateX(0%);
+            transition: all 1s;
+            transition-delay: 1.7s;
+        }
+/* */
+/* FIM SEC 1 */
+
 @media (max-width: 800px) {
 
     .nav-btn {
