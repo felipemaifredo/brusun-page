@@ -227,7 +227,7 @@ html {
         color: var(--cor-1);
         margin-top: 20px;
     }
-        
+/* SLIDE 2 */
 .text-slide2 {
     position: absolute;
     top: 20%;
@@ -289,7 +289,17 @@ html {
 }
 
 @media (max-width: 800px) {
-
+    /* -- WHATS ICON -- */
+.whatsapp-butoon {
+    top: 60%;
+    right: 30%;
+}
+.whatsapp-butoon > a > img {
+    height: 70px;
+    width: 70px;
+    border-radius: 15px;
+}
+/* -- WHATS ICON -- */
     .nav-btn {
         display: flex;
         gap: 5px;
@@ -352,4 +362,47 @@ html {
         visibility: visible;
     }
     /* NAV */
+    /* SEC 1 */
+    /* TEXT SLIDE 1 */
+.slide {
+    height: 90vh;
+    display: grid;
+}
+.text-slide1 {
+    height: 200px;
+    width: 280px;
+}
+    .slide1-text1 {
+        font-size: 20px;
+    }
+    .slide1-text2 {
+        font-size: 30px;
+    }
+/* SLIDE 2 */
+.text-slide2 {
+    top: 20%;
+    left: 0%;
+    height: 200px;
+    width: 100%;
+}
+    .slide2-text1, .slide2-text4{
+        font-size: 20px;
+    }
+    .slide2-text2, .slide2-text3 {
+        font-size: 15px;
+    }
+        .active .slide2-text1 {
+            transform: translateX(-30%);
+        }
+        .active .slide2-text2 {
+            transform: translateX(-40%);
+        }
+        .active .slide2-text3 {
+            transform: translateX(-35%);
+        }
+        .active .slide2-text4 {
+            transform: translateX(-45%);
+        }
+/* */
+    /* FIM SEC 1 */
 }
