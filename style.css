@@ -67,7 +67,7 @@ html {
         display: none;
     }
     .nav-box {
-        z-index: 2;
+        z-index: 5;
         position: absolute;
         top: 0;
         left: 0;
@@ -105,118 +105,10 @@ html {
                         transform: scale(1);
                     }           
 /* FIM NAV */
-/* SEC 1 */ 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-.slide {
-    max-width: 380px;
-    margin: 20px auto;
-    display: grid;
-}
-
-.slide-itens {
-    position: relative;
-    grid-area: 1/1;
-}
-
-.slide-nav {
-    grid-area: 1/1;
-    z-index: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 98% 1fr;
-}
 
 
-.slide-itens > * {
-    position: absolute;
-    top: 0;
-    opacity: 0;
-    pointer-events: none;
-}
 
-.slide-itens > .active {
-    opacity: 1;
-    pointer-events: initial;
-    position: relative;
-}
-
-.slide-nav button {
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: none;
-}
-
-.slide-nav button img {
-    height: 50px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.slide-next {
-    justify-content: flex-end !important;
-}
-
-p {
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    right: 0%;
-    background-color: rebeccapurple;
-    padding: 10px;
-    transition: all 1s;
-}
-
-.active p {
-    opacity: 1;
-    right: 50%;
-
-}
-
-.slide-thumb {
-    display: flex;
-    grid-column: 1 / 3;
-}
-
-.slide-thumb > span {
-    flex: 1;
-    display: block;
-    height: 3px;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 5px;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-
-.slide-thumb > span.active {
-}
-
-.slide-thumb > span.active::after {
-    content: "";
-    display: block;
-    height: inherit;
-    background-color: rgba(255, 255, 255, 0.9);
-    transform: translateX(-100%);
-    animation: translateX-Animatio 5s forwards linear;
-}
-
-@keyframes translateX-Animatio {
-    to {
-        transform: initial;
-    }
-}
-/* FIM SEC 1 */
-
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     .nav-btn {
         display: flex;
