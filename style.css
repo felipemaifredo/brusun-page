@@ -118,6 +118,7 @@ html {
     width: 100vw;
     height: 100vh;
     display: grid;
+    overflow-x: hidden;
 }
 .img-box {
     height: 100%;
@@ -291,8 +292,8 @@ html {
 @media (max-width: 800px) {
     /* -- WHATS ICON -- */
 .whatsapp-butoon {
-    top: 60%;
-    right: 30%;
+    bottom: -10px;
+    right: -10px;
 }
 .whatsapp-butoon > a > img {
     height: 70px;
@@ -364,10 +365,6 @@ html {
     /* NAV */
     /* SEC 1 */
     /* TEXT SLIDE 1 */
-.slide {
-    height: 90vh;
-    display: grid;
-}
 .text-slide1 {
     height: 200px;
     width: 280px;
