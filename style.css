@@ -195,7 +195,7 @@ html {
     height: inherit;
     background-color: rgba(255, 255, 255, 0.9);
     transform: translateX(-100%);
-    animation: translateX-Animatio 5s forwards linear;
+    animation: translateX-Animatio 10s forwards linear;
 }
 /* TEXT SLIDE 1 */
 .text-slide1 {
