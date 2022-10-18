@@ -350,43 +350,32 @@ html {
     .slide-nav button img {
        opacity: 0;
     }
-    /* TEXT SLIDE 1 */
-
-.text-slide1 {
-    height: 200px;
-    width: 280px;
+ /* TEXT SLIDE 1 */
+ .text-slide {
+    line-height: 20px;
 }
     .slide1-text1 {
-        font-size: 20px;
-    }
-    .slide1-text2 {
-        font-size: 30px;
-    }
-/* SLIDE 2 */
-.text-slide2 {
-    top: 50%;
-    left: 0%;
-    height: 200px;
-    width: 100%;
-}
-    .slide2-text1, .slide2-text4{
-        font-size: 20px;
-    }
-    .slide2-text2, .slide2-text3 {
+        background-color: var(--cor-4);
         font-size: 15px;
     }
-        .active .slide2-text1 {
-            transform: translateX(-30%);
-        }
-        .active .slide2-text2 {
-            transform: translateX(-40%);
-        }
-        .active .slide2-text3 {
-            transform: translateX(-35%);
-        }
-        .active .slide2-text4 {
-            transform: translateX(-45%);
-        }
+    .slide1-text2 {
+        background-color: var(--cor-4);
+        font-size: 20px;
+        margin-left: 3px;
+    }
+/* SLIDE 3 */
+.text-slide3 {
+    line-height: 15px;
+}
+.text-slide3 .slide1-text1 {
+    background-color: var(--cor-5);
+    font-size: 15px;
+}
+.text-slide3 .slide1-text2 {
+    background-color: var(--cor-5);
+    font-size: 20px;
+    margin-left: 3px;
+}
 /* */
     /* FIM SEC 1 */
 }
