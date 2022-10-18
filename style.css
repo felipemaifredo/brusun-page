@@ -215,14 +215,14 @@ html {
 }
     .slide1-text1 {
         background-color: var(--cor-4);
-        font-size: 30px;
+        font-size: 25px;
         color: white;
         padding: 0 10px;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
     .slide1-text2 {
         background-color: var(--cor-4);
-        font-size: 40px;
+        font-size: 35px;
         color: white;
         padding: 0 10px;
         font-weight: 900;
@@ -251,7 +251,7 @@ html {
     font-size: 30px;
     color: white;
     padding: 0 10px;
-    margin-left: 5px;
+    margin-left: 10px;
     letter-spacing: 5px;
 }
 .text-slide3 .slide1-text2 {
