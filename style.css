@@ -227,7 +227,7 @@ html {
         color: white;
         padding: 0 10px;
 
-        margin-left: 200px;
+        margin-left: 100px;
         opacity: 0;
         transition: all 1s;
     }
@@ -238,7 +238,7 @@ html {
         padding: 0 10px;
         font-weight: 900;
 
-        margin-left: 200px;
+        margin-left: 100px;
         opacity: 0;
         transition: all 1s;
         transition-delay: 1s;
@@ -269,7 +269,7 @@ html {
     padding: 0 10px;
     font-weight: 900;
 
-    margin-left: 200px;
+    margin-left: 100px;
     opacity: 0;
     transition: all 1s;
 }
@@ -281,7 +281,7 @@ html {
     margin-left: 5px;
     letter-spacing: 2px;
     
-    margin-left: 200px;
+    margin-left: 100px;
     opacity: 0;
     transition: all 1s;
     transition-delay: 1s;
@@ -316,7 +316,6 @@ html {
         color: var(--cor-1);
         text-transform: uppercase;
     }
-
         .text-box-sec2 h2 {
             background-color: var(--cor-1);
             color: var(--cor-3);
@@ -413,7 +412,6 @@ html {
         transition: all .5s;
         visibility: hidden;
         overflow: hidden;
-       
     }
     #nav.active .nav-box-itens {
         height: 400px;
@@ -440,7 +438,6 @@ html {
     .slide1-text2 {
         background-color: var(--cor-4);
         font-size: 20px;
-        margin-left: 3px;
     }
 /* SLIDE 3 */
 .text-slide3 {
