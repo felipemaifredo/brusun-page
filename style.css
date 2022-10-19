@@ -574,11 +574,14 @@ html {
         flex-direction: column;
         gap: 30px;
     }
+    .init-hidden-1 {
+        transition-delay: 0s !important;
+    }
     .init-hidden-2 {
-        transition-delay: 0s;
+        transition-delay: 0s !important;
     }
     .init-hidden-3 {
-        transition-delay: 0s;
+        transition-delay: 0s !important;
     }
 /* FIM SEC 2 */
 /* SEC 3 */
