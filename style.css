@@ -338,32 +338,23 @@ html {
 /* --- init hidden --- */
 .init-hidden {
     opacity: 0;
-    transform: translateX(50px);
-    
+    transform: translateX(50px); 
 }
-
 .init-hidden-1 {
     transition: all 1s linear;
 }
-
 .init-hidden-2 {
     transition: all 1s linear;
     transition-delay: .5s;
 }
-
 .init-hidden-3 {
     transition: all 1s linear;
     transition-delay: 1s;
 }
-
-
-
 .init-hidden-off {
     opacity: 1;
     transform: translateX(0px);
 }
-
-
 /* FIM SEC 2 */
 /* SEC 3 */
 #sec3 {
@@ -497,6 +488,12 @@ html {
     .card-box-sec2 {
         flex-direction: column;
         gap: 30px;
+    }
+    .init-hidden-2 {
+        transition-delay: 0s;
+    }
+    .init-hidden-3 {
+        transition-delay: 0s;
     }
 /* FIM SEC 2 */
 }
