@@ -641,7 +641,4 @@ html {
         text-align: center;
         line-height: 12vw;
     }
-    .init-hidden-4 {
-        transform: translateX(25px) !important ;
-    }
 }
