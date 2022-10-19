@@ -341,14 +341,14 @@ html {
     transform: translateX(50px); 
 }
 .init-hidden-1 {
-    transition: all 1s linear;
+    transition: all 1s;
 }
 .init-hidden-2 {
-    transition: all 1s linear;
+    transition: all 1s;
     transition-delay: .5s;
 }
 .init-hidden-3 {
-    transition: all 1s linear;
+    transition: all 1s;
     transition-delay: 1s;
 }
 .init-hidden-off {
