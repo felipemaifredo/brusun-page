@@ -620,9 +620,6 @@ html {
 .right-side-sec3-box {
     display: flex;
     align-items: center;
-    text-transform: uppercase;
-    color: var(--cor-3);
-    font-weight: 500;
     font-size: 5vw;
     line-height: 5vw;
     margin-right: 0%;
