@@ -676,8 +676,8 @@ html {
 }
 
 .box-content-sec5 form {
-    height: 60%;
-    width: 80%;
+    height: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -725,11 +725,6 @@ html {
         height: 29px;  
         animation: spinloading 1s infinite;
     }
-
-.box-content-sec5 form label {
-    margin-top: 10px;
-    text-align: center;
-}
 
 /* --- FIM SEC 5 --- */
 footer {
