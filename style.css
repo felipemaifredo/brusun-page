@@ -174,7 +174,7 @@ html {
                     }     
     
     .item-nav-destaque {
-        background-color: var(--cor-3);
+        background-color: var(--cor-4);
         color: var(--cor-1) !important;
         animation: whatsapp-animation 1s infinite alternate-reverse;
         margin-left: 15px;
@@ -305,7 +305,6 @@ html {
     .active .slide1-text2 {
         opacity: 1;
         margin-left: 5px;
-
     }   
 /* SLIDE 3 */
 .text-slide3 {
@@ -410,10 +409,6 @@ html {
             height: 6em;
         }
 
-    .card-item-sec2 .text-diff-sec2 {
-        font-size: 1.5em !important;
-    }
-
     .card-item-sec2 > .card-item-box-text {
         justify-content: flex-start;
     }
@@ -467,7 +462,6 @@ html {
     background-position: bottom left;
     display: flex;
 }
-
 .left-side-sec3 {
     height: 100%;
     width: 50%;
@@ -475,7 +469,6 @@ html {
     flex-direction: column;
     align-items: flex-start;
 }
-
     .left-side-sec3 h3 {
         font-size: 6vw;
         text-transform: uppercase;
