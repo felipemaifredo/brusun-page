@@ -172,7 +172,6 @@ html {
                     .right-nav-item > a:active {
                         transform: scale(1);
                     }     
-    
     .item-nav-destaque {
         background-color: var(--cor-4);
         color: var(--cor-1) !important;
@@ -570,6 +569,10 @@ html {
     padding-left: 5vw;
 }
 
+.right-side-sec5 {
+    padding-right: 5vw;
+}
+
     .left-side-sec5 h3 {
         width: 100%;
         font-size: 25px;
@@ -655,12 +658,6 @@ html {
     background-color: var(--cor-4);
 }
 /* */
-.right-side-sec5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .box-content-sec5 {
     height: 100%;
     width: 100%;
@@ -670,17 +667,25 @@ html {
     justify-content: center;
 }
 
+.right-side-sec5 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .box-content-sec5 form {
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
 }
 
 .box-content-sec5 form input, .box-content-sec5 form select {
-    width: 90%;
+    width: 100%;
     height: 25vh;
     max-height: 40px;
     outline: none;
@@ -710,7 +715,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+  
 }
     .box-content-sec5 form button:hover {
         transition: all .2s;
@@ -965,6 +970,9 @@ footer {
     }
     .left-side-sec5 {
         padding-left: 0;
+    }
+    .right-side-sec5 {
+        padding-right: 0;
     }
     .left-side-sec5 h3 {
         padding-top: 20px;
