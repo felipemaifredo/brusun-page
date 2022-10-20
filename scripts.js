@@ -91,42 +91,38 @@ new SlideStories('slide')
 const documentForm = document.querySelector("form");
 const formBtn = document.querySelector("button.form-btn");
 const nameIn = document.querySelector("input[name=nome]");
-const whatsEmail = document.querySelector("input[name=whatsappemail]")
+const whatsEmail = document.querySelector("input[name=whatsappemail]");
 const assunto = document.querySelector("select[name=assunto]");
 const outro = document.querySelector("input[name=outro]")
 
-documentForm.addEventListener("submit", (event) => {
-    
+documentForm.addEventListener("submit", (event) => { 
     event.preventDefault();
-
+    
     let  getTime = getHours()
     let nameV =  nameIn.value;
     let whatsEmailV =  whatsEmail.value;
     let assuntoV = assunto.value;
     let outroV = outro.value;
-
+    let inputRangeV = inputRange.value;
+     
 
     if ( nameV == "" || whatsEmailV == "" || assuntoV == "" ) {
         formBtn.innerHTML = "Preecha os campos acima";
-        setTimeout( () => {
-            formBtn.innerHTML = "Enviar";
-        }, 5000);
-    } else {
+        setTimeout( () => { formBtn.innerHTML = "Enviar"; }, 5000);
+    } else { 
         formBtn.innerHTML ='<img src="assets/icons/loading.png">';
-        fetch("https://api.sheetmonkey.io/form/7JKr1TpjSCqNPfTEju5jZ8", {
+        fetch("https://api.sheetmonkey.io/form/62JbUY6KjizVbdEoCdiA9R", {
             method: "post",
             headers: { "Accept": "aplication/json", "Content-Type": "application/json" },
-            body: JSON.stringify({ nome: nameV, WhatsAppEmail: whatsEmailV, Assunto: assuntoV, Outro: outroV, Quando: getTime }),
+            body: JSON.stringify({ NOME: nameV, WHATSAPPEMAIL: whatsEmailV, GASTO: inputRangeV, ASSUNTO: assuntoV, OUTRO: outroV, QUANDO: getTime }),
         }).then( () => msgEnviada() )
     };
 });
-
 function getHours() {
     let timeElapsed = Date.now();
     let today = new Date(timeElapsed);
     return today.toUTCString(); // "Sun, 30 Jan 2022 18:30:00 GMT"
 };
-
 function msgEnviada() {
     formBtn.innerHTML = "Mensagem Enviada!";
     setTimeout( () => {
@@ -136,19 +132,26 @@ function msgEnviada() {
         formBtn.innerHTML = "Enviar";
     }, 5000);
 };
-
 assunto.addEventListener('change', () => {
     if ( assunto.value == "Outro") {
         outro.style.display = "Block";
     } else {
         outro.style.display = "none";
     }
-})
-
-
-
-function inputOutro() {
-    
-   
-}
+});
 // FIM FORM SEND
+// SIMULADOR DE CONTA
+
+const inputRange = document.querySelector('input#input-range');
+const textGasto = document.querySelector('span#gasto-sec5');
+const textResult = document.querySelector('p#text-economia');
+
+inputRange.oninput = ( ()=>  {
+    let inputRangeV = inputRange.value
+    textGasto.innerText = `R$ ${inputRangeV}`;
+
+   let resultV = parseInt((95 * inputRangeV) / 100);
+
+   textResult.innerHTML = `R$ ${resultV},00 <span>/ mês</span>`;
+ })
+//
