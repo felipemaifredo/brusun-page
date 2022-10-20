@@ -376,7 +376,8 @@ html {
             border-radius: 15px;
             font-size: 2vw;
         }
-    .card-box-sec2 {
+    
+        .card-box-sec2 {
         height: 80%;
         width: 100%;
         display: flex;
@@ -389,7 +390,7 @@ html {
 .card-item-sec2 {
     height: 15vw;
     min-height: 200px;
-    width: 220px;
+    width: 230px;
     background-color: var(--cor-1);
     border-radius: 30px;
     display: flex;
@@ -415,7 +416,7 @@ html {
 
     .card-item-sec2 > .card-item-box-text > h5 {
         color: var(--cor-3);
-        font-size: 2em;
+        font-size: 1.8em;
         font-weight: 600;
     }
 
