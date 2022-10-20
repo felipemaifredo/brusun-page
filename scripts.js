@@ -72,7 +72,6 @@ class SlideStories {
 new SlideStories('slide')
 // FIM SLIDER
 // OBSERVAR 
-
     const observer = new IntersectionObserver( entries => {
         console.log(entries)
 
@@ -87,5 +86,69 @@ new SlideStories('slide')
     Array.from(document.querySelectorAll('.init-hidden')).forEach( element => {
         observer.observe(element)
     });
-
 // FIM OBSERVAR 
+// FORM SEND
+const documentForm = document.querySelector("form");
+const formBtn = document.querySelector("button.form-btn");
+const nameIn = document.querySelector("input[name=nome]");
+const whatsEmail = document.querySelector("input[name=whatsappemail]")
+const assunto = document.querySelector("select[name=assunto]");
+const outro = document.querySelector("input[name=outro]")
+
+documentForm.addEventListener("submit", (event) => {
+    
+    event.preventDefault();
+
+    let  getTime = getHours()
+    let nameV =  nameIn.value;
+    let whatsEmailV =  whatsEmail.value;
+    let assuntoV = assunto.value;
+    let outroV = outro.value;
+
+
+    if ( nameV == "" || whatsEmailV == "" || assuntoV == "" ) {
+        formBtn.innerHTML = "Preecha os campos acima";
+        setTimeout( () => {
+            formBtn.innerHTML = "Enviar";
+        }, 5000);
+    } else {
+        formBtn.innerHTML ='<img src="assets/icons/loading.png">';
+        fetch("https://api.sheetmonkey.io/form/7JKr1TpjSCqNPfTEju5jZ8", {
+            method: "post",
+            headers: { "Accept": "aplication/json", "Content-Type": "application/json" },
+            body: JSON.stringify({ nome: nameV, WhatsAppEmail: whatsEmailV, Assunto: assuntoV, Outro: outroV, Quando: getTime }),
+        }).then( () => msgEnviada() )
+    };
+});
+
+function getHours() {
+    let timeElapsed = Date.now();
+    let today = new Date(timeElapsed);
+    return today.toUTCString(); // "Sun, 30 Jan 2022 18:30:00 GMT"
+};
+
+function msgEnviada() {
+    formBtn.innerHTML = "Mensagem Enviada!";
+    setTimeout( () => {
+        nameIn.value = "";
+        whatsEmail.value = "";
+        assunto.value = "Outro";
+        formBtn.innerHTML = "Enviar";
+    }, 5000);
+};
+
+assunto.addEventListener('change', () => {
+    if ( assunto.value == "Outro") {
+        outro.style.display = "Block";
+    } else {
+        outro.style.display = "none";
+    }
+})
+
+
+
+function inputOutro() {
+    
+   
+}
+// FIM FORM SEND

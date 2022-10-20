@@ -10,8 +10,14 @@
     <title>Brusun | Energia Solar </title>
 </head>
 <body>
+    <div class="instagram-button">
+        <a href="https://www.instagram.com/brusun.solar/" target="_blank"><span>Siga-nos no Instagram</span><img src="./assets/icons/instagram-logo.png"></a>
+    </div>
+    <div class="whatsapp-butoon">
+        <a href="https://api.whatsapp.com/send?phone=5528999519306" target="_blank"><img src="assets/icons/whats-icon.png" alt=""></a>
+    </div>
     <div class="nav-box"><!--INICIO NAV -->
-        <a href="#sec1"><img src="assets/imgs/logo-h.png" alt="" class="logo-nav"></a>
+        <a href="#sec1"><img src="assets/icons/logo-h.png" alt="" class="logo-nav"></a>
         <nav id="nav">
             <Button 
                 class="nav-btn" onclick="toggleMenu()">
@@ -21,7 +27,7 @@
                 <li class="right-nav-item"><a href="#sec2" class="item-nav">Quem Somos</a></li>
                 <li class="right-nav-item"><a href="#sec3" class="item-nav">Vantagens</a></li>
                 <li class="right-nav-item"><a href="#sec4" class="item-nav">Clientes</a></li>
-                <li class="right-nav-item"><a href="#sec5" class="item-nav">Contato</a></li>
+                <li class="right-nav-item"><a href="#sec5" class="item-nav item-nav-destaque">Orçamento</a></li>
             </ul>
         </nav>
     </div><!--FIM NAV -->
@@ -47,8 +53,8 @@
             </div>
         </div>
         <nav class="slide-nav">
-            <button class="slide-prev"><img src="./assets/imgs/arrow2.png"></button>
-            <button class="slide-next"><img src="./assets/imgs/arrow.png"></button>
+            <button class="slide-prev"><img src="./assets/icons/arrow2.png"></button>
+            <button class="slide-next"><img src="./assets/icons/arrow.png"></button>
             <div class="slide-thumb"></div> 
         </nav>
     </section><!--FIM SEC 1-->
@@ -72,7 +78,7 @@
             <span class="class-span-right-1 init-hidden">Investi<br>mento</span>
             <div class="right-side-sec3-box">
                 <span class="class-span-right-2 init-hidden">
-                    <img src="./assets/imgs/icon-sun.png">
+                    <img src="./assets/icons/icon-sun.png">
                 </span>
                 <p>Gere sua energia sem se<br>
                 <span class="class-span-right-3">Preocupar por anos!</span></p>
@@ -80,11 +86,29 @@
             <span class="class-span-right-4 init-hidden">Garan<br>tido</span>
         </div>
     </section>
-    <div class="instagram-button">
-        <a href="https://www.instagram.com/brusun.solar/" target="_blank"><span>Siga-nos no Instagram</span><img src="./assets/icons/instagram-logo.png"></a>
-    </div>
-    <div class="whatsapp-butoon">
-        <a href="https://api.whatsapp.com/send?phone=5528999519306" target="_blank"><img src="assets/icons/whats-icon.png" alt=""></a>
-    </div>
+    <section id="sec5"><!--INICIO SEC 5-->
+        <div class="content-sec5">
+            <div class="box-content-sec5">
+                <h3 text-sec5>Obrigado por<br> chegar até aqui!</h3>
+                <p text-sec5>Preencha os dados Abaixo<br> e envie uma mensagem</p>
+            </div>
+            <div class="box-content-sec5">
+                <form action="submit" method="post" class="form" id="formcontact">
+                    <input type="text" name="nome" placeholder="Nome" class="input-item">
+                    <input type="text" name="whatsappemail" placeholder="Email ou WhatsApp" class="input-item">
+                    <select name="assunto" id="assunto" placeholder="Assunto" class="input-item">
+                        <option value="Orçamento Casa">Orçamento para minha casa</option>
+                        <option value="Orçamento Empresa">Orçamento para minha empresa</option>
+                        <option value="Outro" onclick="inputOutro()">Outro</option>
+                </select>
+                <input type="text" name="outro" placeholder="Digite aqui" class="input-item inputOutro">
+                <button class="form-btn" form="formcontact" type="submit" value="submit" text-sec5>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section><!--FIM SEC 5-->
+    <footer>
+
+    </footer>
 </body>
 </html>
