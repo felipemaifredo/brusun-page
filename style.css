@@ -179,6 +179,7 @@ html {
         animation: whatsapp-animation 1s infinite alternate-reverse;
         margin-left: 15px;
         margin-right: 15px;
+        border-radius: 15px;
     }
 /* FIM NAV */
 /* SEC 1 */ 
@@ -277,7 +278,7 @@ html {
     .slide1-text1 {
         background-color: var(--cor-4);
         font-size: 25px;
-        color: white;
+        color: var(--cor-1);
         padding: 0 10px;
 
         margin-left: 100px;
@@ -287,7 +288,7 @@ html {
     .slide1-text2 {
         background-color: var(--cor-4);
         font-size: 35px;
-        color: white;
+        color: var(--cor-1);
         padding: 0 10px;
         font-weight: 900;
 
@@ -318,7 +319,7 @@ html {
 .text-slide3 .slide1-text2 {
     background-color: var(--cor-5);
     font-size: 35px;
-    color: white;
+    color: var(--cor-1);
     padding: 0 10px;
     font-weight: 900;
 
@@ -329,7 +330,7 @@ html {
 .text-slide3 .slide1-text1 {
     background-color: var(--cor-5);
     font-size: 30px;
-    color: white;
+    color: var(--cor-1);
     padding: 0 10px;
     margin-left: 5px;
     letter-spacing: 2px;
@@ -352,7 +353,7 @@ html {
 /* FIM SEC 1 */
 /* SEC 2 */
 #sec2 {
-    height: 650px;
+    height: 500px;
     width: 100vw;
     background-color: var(--cor-3);
     display: flex;
@@ -374,7 +375,7 @@ html {
             color: var(--cor-3);
             padding: 10px;
             border-radius: 15px;
-            font-size: 3vw;
+            font-size: 2vw;
         }
     .card-box-sec2 {
         height: 80%;
@@ -387,9 +388,9 @@ html {
     }
     
 .card-item-sec2 {
-    height: 20vw;
-    min-height: 300px;
-    width: 240px;
+    height: 15vw;
+    min-height: 200px;
+    width: 220px;
     background-color: var(--cor-1);
     border-radius: 30px;
     display: flex;
@@ -704,7 +705,7 @@ html {
 }
 
 .box-content-sec5 form button {
-    height: 40px;
+    height: 45px;
     width: 60%;
     border-radius: 20px;
     border: none;
@@ -715,17 +716,16 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
     .box-content-sec5 form button:hover {
         transition: all .2s;
         transform: scale(1.1);
     }
-
     .form-btn > img{
         height: 29px;  
         animation: spinloading 1s infinite;
     }
-
 /* --- FIM SEC 5 --- */
 footer {
     height: 100px;
@@ -742,16 +742,16 @@ footer {
 
 @media (max-width: 950px) {
     /* -- WHATS ICON -- */
-.whatsapp-butoon {
-    bottom: -10px;
-    right: -10px;
-}
-.whatsapp-butoon > a > img {
-    height: 70px;
-    width: 70px;
-    border-radius: 15px;
-}
-/* -- WHATS ICON -- */
+    .whatsapp-butoon {
+        bottom: -10px;
+        right: -10px;
+    }
+    .whatsapp-butoon > a > img {
+        height: 70px;
+        width: 70px;
+        border-radius: 15px;
+    }
+    /* -- WHATS ICON -- */
     .nav-btn {
         display: flex;
         gap: 5px;
@@ -823,10 +823,10 @@ footer {
     .slide-nav button img {
        opacity: 0;
     }
- /* TEXT SLIDE 1 */
- .text-slide {
-    line-height: 20px;
-}
+    /* TEXT SLIDE 1 */
+    .text-slide {
+        line-height: 20px;
+    }
     .slide1-text1 {
         background-color: var(--cor-4);
         font-size: 15px;
@@ -835,80 +835,89 @@ footer {
         background-color: var(--cor-4);
         font-size: 20px;
     }
-/* SLIDE 3 */
-.text-slide3 {
-    line-height: 15px;
-}
-.text-slide3 .slide1-text1 {
-    background-color: var(--cor-5);
-    font-size: 15px;
-}
-.text-slide3 .slide1-text2 {
-    background-color: var(--cor-5);
-    font-size: 20px;
-}
-/* */
-    /* FIM SEC 1 */
-/* SEC 2 */
-#sec2 {
-    height: 1400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-    .text-box-sec2 {
-        height: 10%;
-        align-items: flex-end;
-        padding: 10px;
+    /* SLIDE 3 */
+    .text-slide3 {
+        line-height: 15px;
     }
-        .text-box-sec2 h2 {
+    .text-slide3 .slide1-text1 {
+        background-color: var(--cor-5);
+        font-size: 15px;
+    }
+    .text-slide3 .slide1-text2 {
+        background-color: var(--cor-5);
+        font-size: 20px;
+    }
+    /* */
+    /* FIM SEC 1 */
+    /* SEC 2 */
+    #sec2 {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-item-sec2 {
+        height: 15vw;
+        min-height: 250px;
+        width: 400px;
+        background-color: var(--cor-1);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .text-box-sec2 {
+            height: 10%;
+            align-items: flex-end;
             padding: 10px;
-            border-radius: 15px;
-            font-size: 5vw;
-            text-align: center;
         }
-        
-    .card-box-sec2 {
-        margin-top: -50px;
-        height: 100%;
+            .text-box-sec2 h2 {
+                padding: 10px;
+                border-radius: 15px;
+                font-size: 5vw;
+                text-align: center;
+            }
+        .card-box-sec2 {
+            margin-top: -50px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+        }
+    /* --- init hidden --- */
+    .init-hidden {
+        transition: all .5s;
+    }
+    .init-hidden-2 {
+        transition-delay: 0s !important;
+    }
+    .init-hidden-3 {
+        transition-delay: .0s !important;
+    }
+    .init-hidden-4{
+        transition-delay: .0s !important;
+    }
+    /* FIM SEC 2 */
+    /* SEC 3 */
+    #sec3 {
+        height: 90vh;
+        width: 100vw;
+        background-size: 120vw;
+        flex-direction: column;
+    }
+    .left-side-sec3 {
+        height: 30%;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 30px;
     }
-    
-/* --- init hidden --- */
-.init-hidden {
-    transition: all .5s;
-}
-.init-hidden-2 {
-    transition-delay: 0s !important;
-}
-.init-hidden-3 {
-    transition-delay: .0s !important;
-}
-.init-hidden-4{
-    transition-delay: .0s !important;
-}
-/* FIM SEC 2 */
-/* SEC 3 */
-#sec3 {
-    height: 90vh;
-    width: 100vw;
-    background-size: 120vw;
-    flex-direction: column;
-}
-
-.left-side-sec3 {
-    height: 30%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
     .left-side-sec3 h3 {
         font-size: 10vw;
         margin-top: 0%;
@@ -923,52 +932,46 @@ footer {
         margin-left: 0%;
         color: var(--cor-3);
     }
-.right-side-sec3 {
-    height: 70%;
-    width: 100%;
-    justify-content: flex-start;
-}
- 
-.right-side-sec3-box {
-    display: flex;
-    align-items: center;
-    font-size: 5vw;
-    line-height: 5vw;
-    margin-right: 0%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+    .right-side-sec3 {
+        height: 70%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .right-side-sec3-box {
+        display: flex;
+        align-items: center;
+        font-size: 5vw;
+        line-height: 5vw;
+        margin-right: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
     .class-span-right-2 img {
         height: 15vw;
     }
     .class-span-right-3 {
         font-weight: 700;
     }
-
     .class-span-right-1, .class-span-right-4 {
         font-size: 13vw;
         text-align: center;
         line-height: 12vw;
     }
-    /*--- SEC 4 ---*/
-
-.content-sec5 {
-    height: 80vh;
-    width: 90vw;
-    flex-direction: column;
-    align-items: center;
-    min-width: 200px;
-}
-
-.left-side-sec5, .right-side-sec5 {
-    width: 90%;
-    height: 90%;
-}
-
-.left-side-sec5 {
-    padding-left: 0;
-}
-
+    /*--- SEC 5 ---*/
+    .content-sec5 {
+        height: 80vh;
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        min-width: 200px;
+    }
+    .left-side-sec5, .right-side-sec5 {
+        width: 90%;
+        height: 90%;
+    }
+    .left-side-sec5 {
+        padding-left: 0;
+    }
     .left-side-sec5 h3 {
         padding-top: 20px;
         text-align: center;
@@ -983,7 +986,6 @@ footer {
         align-items: center;
         justify-content: center;
     }
-
     .result-box-sec5 {
         align-items: center;
         text-align: center;
@@ -992,9 +994,10 @@ footer {
         text-align: center;
     }
 /* */
-
-.box-content-sec5 form {
-    height: 70%;
-}
-
+    .box-content-sec5 form {
+        height: 70%;
+    }
+    .box-content-sec5 form button {
+        margin-top: 0px;
+    }
 }
