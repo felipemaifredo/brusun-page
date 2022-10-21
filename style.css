@@ -559,13 +559,12 @@ html {
 }
 .economia-box-sec5 h2, .economia-box-sec5 p {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 28px;
     color: var(--cor-2);
     text-align: center;
 }
 
 .economia-box-sec5 p {
-    text-transform: uppercase;
     font-size: 25px;
 }
 
