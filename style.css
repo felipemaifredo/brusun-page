@@ -459,7 +459,7 @@ html {
     width: 100vw;
     background-image: url('./assets/imgs/grama.png');
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 50%;
     background-position: bottom left;
     display: flex;
 }
