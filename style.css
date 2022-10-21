@@ -457,9 +457,12 @@ html {
 /* FIM SEC 2 */
 /* SEC 3 */
 #sec3 {
-    height: 120vh;
+    height: 100vh;
+    width: 100vw;
     background-image: url('./assets/imgs/grama.png');
+    background-repeat: no-repeat;
     background-size: 50%;
+    background-position: bottom left;
     display: flex;
 }
 .left-side-sec3 {
@@ -938,9 +941,7 @@ footer img {
     /* FIM SEC 2 */
     /* SEC 3 */
     #sec3 {
-        height: 100vh;
-        width: 100vw;
-        background-size: 12vw;
+        height: 120vh;
         flex-direction: column;
         background-image: url('./assets/imgs/grama-mobile.png');
         background-size: 100%;
