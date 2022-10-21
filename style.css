@@ -458,11 +458,8 @@ html {
 /* SEC 3 */
 #sec3 {
     height: 120vh;
-    width: 100vw;
     background-image: url('./assets/imgs/grama.png');
-    background-repeat: no-repeat;
     background-size: 50%;
-    background-position: bottom left;
     display: flex;
 }
 .left-side-sec3 {
