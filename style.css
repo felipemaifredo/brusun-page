@@ -999,6 +999,7 @@ footer img {
             display: block;
             background-image: url('./assets/imgs/grama-mobile.png');
             background-size: 95%;
+            background-position: center left;
             background-repeat: no-repeat;
             height: 30%;
             width: 100%;
