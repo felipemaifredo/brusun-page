@@ -357,7 +357,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
     .text-box-sec2 {
         height: 20%;
@@ -383,7 +382,7 @@ html {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 30px;
     }
     
 .card-item-sec2 {
@@ -396,6 +395,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
     .card-item-sec2 > .card-item-box-img, .card-item-sec2 > .card-item-box-text {
         width: 100%;
@@ -404,6 +404,7 @@ html {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
     }
         .card-item-sec2 > .card-item-box-img > img {
             height: 6em;
@@ -733,7 +734,7 @@ footer {
 
 @media (max-width: 1200px) {
     .card-box-sec2 {
-        width: 150%;
+        width: 100%;
         transform: scale(.8);
     }
 }
