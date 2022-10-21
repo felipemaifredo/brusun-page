@@ -518,6 +518,8 @@ html {
     }
 
     .class-span-right-1, .class-span-right-4 {
+        text-align: center;
+        width: 100%;
         font-size: 8vw;
         text-transform: uppercase;
         font-weight: 600;
@@ -538,7 +540,6 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -556,6 +557,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+    margin-top: -5px;
 }
 .economia-box-sec5 h2, .economia-box-sec5 p {
     text-transform: uppercase;
@@ -947,8 +949,10 @@ footer img {
     #sec3 {
         height: 90vh;
         width: 100vw;
-        background-size: 120vw;
+        background-size: 12vw;
         flex-direction: column;
+        background-image: url('./assets/imgs/grama-mobile.png');
+        background-size: 100%;
     }
     .left-side-sec3 {
         height: 30%;
