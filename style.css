@@ -951,8 +951,7 @@ footer img {
     /* FIM SEC 2 */
     /* SEC 3 */
     #sec3 {
-        background-image: url('./assets/imgs/grama-mobile.png');
-        background-size: 95%;
+        background-image:none;
         display: flex;
         flex-direction: column;
     }
@@ -980,7 +979,6 @@ footer img {
             height: 50%;
             width: 100%;
         }
-            
             .right-side-sec3-box {
                 display: flex;
                 align-items: center;
@@ -999,6 +997,9 @@ footer img {
                 }
         .virtual-box-background-bottom {
             display: block;
+            background-image: url('./assets/imgs/grama-mobile.png');
+            background-size: 95%;
+            background-repeat: no-repeat;
             height: 30%;
             width: 100%;
         }
