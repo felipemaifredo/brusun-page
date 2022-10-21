@@ -518,20 +518,15 @@ html {
     }
 
     .class-span-right-1, .class-span-right-4 {
-        text-align: center;
-        font-size: 8vw;
-        margin-right: 80px;
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 7vw;
-        color: var(--cor-1);
-        text-shadow: 
-        -2px -2px 1px var(--cor-4), 
-        -2px 2px 1px  var(--cor-4),                    
-         2px -2px 1px  var(--cor-4),                  
-         2px 1px 1px  var(--cor-4);
-
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
+.class-span-right-1 > img, .class-span-right-4 > img {
+    width: 70%;
+}
+
 /* FIM SEC 3 */
 /*--- SEC 5 ---*/
 #sec5 {
@@ -996,12 +991,6 @@ footer img {
     }
     .class-span-right-3 {
         font-weight: 700;
-    }
-    .class-span-right-1, .class-span-right-4 {
-        font-size: 13vw;
-        text-align: center;
-        line-height: 12vw;
-        margin-right: 0px;
     }
     /*--- SEC 5 ---*/
     .content-sec5 {
