@@ -948,12 +948,12 @@ footer img {
     /* FIM SEC 2 */
     /* SEC 3 */
     #sec3 {
-        height: 90vh;
+        height: 100vh;
         width: 100vw;
         background-size: 12vw;
         flex-direction: column;
         background-image: url('./assets/imgs/grama-mobile.png');
-        background-size: 90%;
+        background-size: 100%;
     }
     .left-side-sec3 {
         height: 30%;
