@@ -953,7 +953,7 @@ footer img {
         background-size: 12vw;
         flex-direction: column;
         background-image: url('./assets/imgs/grama-mobile.png');
-        background-size: 100%;
+        background-size: 90%;
     }
     .left-side-sec3 {
         height: 30%;
