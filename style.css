@@ -185,7 +185,7 @@ html {
 .slide {
     margin-top: 79px;
     width: 100vw;
-    height: calc(100vh - 99px) ;
+    height: calc(100vh - 99px);
     display: grid;
 }
     .img-box-1 {
@@ -457,6 +457,7 @@ html {
 /* FIM SEC 2 */
 #sec3 {
     height: 100vh;
+    min-height: 820px;
     width: 100vw;
     background-image: url('./assets/imgs/grama.png');
     background-repeat: no-repeat;
@@ -540,6 +541,7 @@ html {
 /*--- SEC 5 ---*/
 #sec5 {
     height: 100vh;
+    min-height: 500px;
     width: 100vw;
     background-image: url('./assets/imgs/solar4.png');
     background-position: center;
