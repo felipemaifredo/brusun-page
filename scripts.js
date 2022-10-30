@@ -105,7 +105,6 @@ documentForm.addEventListener("submit", (event) => {
     let outroV = outro.value;
     let inputRangeV = inputRange.value;
      
-
     if ( nameV == "" || whatsEmailV == "" || assuntoV == "" ) {
         formBtn.innerHTML = "Preecha os campos acima";
         setTimeout( () => { formBtn.innerHTML = "Enviar"; }, 5000);
@@ -141,7 +140,6 @@ assunto.addEventListener('change', () => {
 });
 // FIM FORM SEND
 // SIMULADOR DE CONTA
-
 const inputRange = document.querySelector('input#input-range');
 const textGasto = document.querySelector('span#gasto-sec5');
 const textResult = document.querySelector('p#text-economia');
