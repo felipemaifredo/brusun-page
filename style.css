@@ -189,14 +189,14 @@ html {
     display: grid;
 }
     .img-box-1 {
-        background-image: url("./assets/imgs/solar1.png");
+        background-image: url("./assets/imgs/solar1.webp");
     }
     .img-box-2 {
-        background-image: url("./assets/imgs/solar2.png");
+        background-image: url("./assets/imgs/solar2.webp");
         
     }
     .img-box-3 {
-        background-image: url("./assets/imgs/solar3.png");
+        background-image: url("./assets/imgs/solar3.webp");
     }
     .img-box {
         overflow: hidden;
@@ -459,7 +459,7 @@ html {
     height: 100vh;
     min-height: 820px;
     width: 100vw;
-    background-image: url('./assets/imgs/grama.png');
+    background-image: url('./assets/imgs/grama.webp');
     background-repeat: no-repeat;
     background-size: 55%;
     background-position: bottom left;
@@ -543,7 +543,7 @@ html {
     height: 100vh;
     min-height: 500px;
     width: 100vw;
-    background-image: url('./assets/imgs/solar4.png');
+    background-image: url('./assets/imgs/solar4.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -999,7 +999,7 @@ footer img {
                 }
         .virtual-box-background-bottom {
             display: block;
-            background-image: url('./assets/imgs/grama-mobile.png');
+            background-image: url('./assets/imgs/grama-mobile.webp');
             background-size: contain;
             background-position: center left;
             background-repeat: no-repeat;

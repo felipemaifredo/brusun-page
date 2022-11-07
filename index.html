@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Economize até 95% em eletricidade em sua casa ou empresa. Solicite hoje mesmo um contato para reduzir seus custos.">
     <link rel="shortcut icon" href="assets/icons/logo-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js" defer></script>
@@ -11,13 +11,13 @@
 </head>
 <body>
     <div class="instagram-button">
-        <a href="https://www.instagram.com/brusun.solar/" target="_blank"><span>Siga-nos no Instagram</span><img src="./assets/icons/instagram-logo.png"></a>
+        <a href="https://www.instagram.com/brusun.solar/" target="_blank" rel=”NoFollow”><span>Siga-nos no Instagram</span><img src="./assets/icons/instagram-logo.png" alt="Icone de acesso para o instagram"></a>
     </div>
     <div class="whatsapp-butoon">
-        <a href="https://api.whatsapp.com/send?phone=5528999764336" target="_blank"><img src="assets/icons/whats-icon.png" alt=""></a>
+        <a href="https://api.whatsapp.com/send?phone=5528999764336" target="_blank" rel=”NoFollow”><img src="assets/icons/whats-icon.png" alt="Icone de acesso para o WhatsApp"></a>
     </div>
     <div class="nav-box"><!--INICIO NAV -->
-        <a href="#sec1"><img src="assets/icons/logo-h.png" alt="" class="logo-nav"></a>
+        <a href="#sec1"><img src="assets/icons/logo-h.png" alt="Logo da Brusun" class="logo-nav"></a>
         <nav id="nav">
             <Button 
                 class="nav-btn" onclick="toggleMenu()">
@@ -26,7 +26,6 @@
             <ul class="nav-box-itens">
                 <li class="right-nav-item"><a href="#" class="item-nav">Quem Somos</a></li>
                 <li class="right-nav-item"><a href="#sec2" class="item-nav">Vantagens</a></li>
-                <li class="right-nav-item"><a href="#sec4" class="item-nav">Clientes</a></li>
                 <li class="right-nav-item"><a href="#sec5" class="item-nav item-nav-destaque">Orçamento</a></li>
             </ul>
         </nav>
@@ -53,8 +52,8 @@
             </div>
         </div>
         <nav class="slide-nav">
-            <button class="slide-prev"><img src="./assets/icons/arrow2.png"></button>
-            <button class="slide-next"><img src="./assets/icons/arrow.png"></button>
+            <button class="slide-prev"><img src="./assets/icons/arrow2.png" alt="Icone para voltar o slide"></button>
+            <button class="slide-next"><img src="./assets/icons/arrow.png" alt="Icone para passar o slide"></button>
             <div class="slide-thumb"></div> 
         </nav>
     </section><!--FIM SEC 1-->
@@ -65,7 +64,7 @@
         <div class="card-box-sec2">
             <div class="card-item-sec2 init-hidden init-hidden-1">
                 <div class="card-item-box-img">
-                    <img src="assets/icons/econo-icon.png" alt="" class="">
+                    <img src="assets/icons/econo-icon.png" alt="Icone de uma moeda representando economia">
                 </div>
                 <div class="card-item-box-text">
                     <h5>+ Economia</h5>
@@ -74,7 +73,7 @@
             </div>
             <div class="card-item-sec2 init-hidden init-hidden-2">
                 <div class="card-item-box-img">
-                    <img src="assets/icons/sust-icon.png" alt="" class="">
+                    <img src="assets/icons/sust-icon.png" alt="Icone de uma lâmpada representando sustentabilidade">
                 </div>
                 <div class="card-item-box-text">
                     <h5 class="text-diff-sec2">+ Energia</h5>
@@ -83,7 +82,7 @@
             </div>
             <div class="card-item-sec2 init-hidden init-hidden-3">
                 <div class="card-item-box-img">
-                    <img src="assets/icons/confo-icon.png" alt="" class="">
+                    <img src="assets/icons/confo-icon.png" alt="Icone de representando conforto">
                 </div>
                 <div class="card-item-box-text">
                     <h5>+ Conforto</h5>
@@ -92,7 +91,7 @@
             </div>
             <div class="card-item-sec2 init-hidden init-hidden-4">
                 <div class="card-item-box-img">
-                    <img src="assets/icons/casa-icon.png" alt="" class="">
+                    <img src="assets/icons/casa-icon.png" alt="Icone de uma casa">
                 </div>
                 <div class="card-item-box-text">
                     <h5 class="text-diff-sec2">+ Valorização</h5>
@@ -111,15 +110,15 @@
             <div class="virtual-box-background-top"></div>
         </div>
         <div class="right-side-sec3">
-            <img src="./assets/imgs/INVESTIMENTO.png" class="class-span-right-1">
+            <img src="./assets/imgs/INVESTIMENTO.png" class="class-span-right-1" alt="Ivestimento">
             <div class="right-side-sec3-box">
                 <span class="class-span-right-2">
-                    <img src="./assets/icons/icon-sun.png">
+                    <img src="./assets/icons/icon-sun.png" alt="Icone representando um Sol">
                 </span>
                 <p>Gere sua energia sem se<br>
                 <span class="class-span-right-3">Preocupar por anos!</span></p>
             </div>
-            <img src="./assets/imgs/GARANTIDO.png" class="class-span-right-4">
+            <img src="./assets/imgs/GARANTIDO.png" class="class-span-right-4" alt="Garantido">
         </div>
         <div class="virtual-box-background-bottom"></div>
     </section>
@@ -133,7 +132,7 @@
                 <h3>Quanto <span>você gasta</span><br> de energia por mês?</h3>
                 <p class="normal-text-sec5">Arraste até chegar no valor da sua conta</p>
                 <div class="gasto-box-sec5">
-                    <input type="range" min="150" max="3000" step="10" class="input-range" value="100" id="input-range"><span class="gasto-sec5" id="gasto-sec5">R$ 150</span>
+                    <input type="range" min="150" max="3000" step="10" class="input-range" value="100" id="input-range" aria-label="Definina o valor da sua conta de energia arrasto para os lados"><span class="gasto-sec5" id="gasto-sec5">R$ 150</span>
                 </div>
                 <div class="result-box-sec5">
                     <p class="normal-text-sec5">você terá uma economia de:</p>
@@ -149,7 +148,7 @@
                         <select name="assunto" id="assunto" placeholder="Assunto" class="input-item">
                             <option value="Orçamento Casa">Orçamento para minha casa</option>
                             <option value="Orçamento Empresa">Orçamento para minha empresa</option>
-                            <option value="Outro" onclick="inputOutro()">Outro</option>
+                            <option value="Outro">Outro</option>
                         </select>
                         <input type="text" name="outro" placeholder="Digite aqui" class="input-item inputOutro">
                         <button class="form-btn" form="formcontact" type="submit" value="submit" text-sec5>Enviar</button>
@@ -159,8 +158,8 @@
         </div>
     </section><!--FIM SEC 5-->
     <footer>
-        <a href="https://beacons.ai/novaya" target="_blank">Design by</a>
-        <a href="https://beacons.ai/novaya" target="_blank"><img src="./assets/icons/novaya-icon.png"></a>
+        <a href="https://beacons.ai/novaya" target="_blank" rel=”NoFollow”>Design by</a>
+        <a href="https://beacons.ai/novaya" target="_blank" rel=”NoFollow”><img src="./assets/icons/novaya-icon.png" alt="Icone de acesso para a página da Novaya"></a>
     </footer>
    
 </body>

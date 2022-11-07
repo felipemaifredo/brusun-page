@@ -98,7 +98,7 @@ const outro = document.querySelector("input[name=outro]")
 documentForm.addEventListener("submit", (event) => { 
     event.preventDefault();
     
-    let  getTime = getHours()
+    let getTime = getHours()
     let nameV =  nameIn.value;
     let whatsEmailV =  whatsEmail.value;
     let assuntoV = assunto.value;
@@ -132,7 +132,7 @@ function msgEnviada() {
     }, 5000);
 };
 assunto.addEventListener('change', () => {
-    if ( assunto.value == "Outro") {
+    if (assunto.value == "Outro") {
         outro.style.display = "Block";
     } else {
         outro.style.display = "none";
@@ -150,6 +150,6 @@ inputRange.oninput = ( ()=>  {
 
    let resultV = parseInt((95 * inputRangeV) / 100);
 
-   textResult.innerHTML = `R$ ${resultV},00 <span>/ mês</span>`;
+   textResult.innerHTML = `R$ ${resultV},00 <span>/mês</span>`;
  })
 //
