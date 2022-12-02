@@ -455,6 +455,185 @@ html {
     transform: translateX(0px);
 }
 /* FIM SEC 2 */
+/*-- INICIO SEC quem somos --*/
+.secqf {
+    height: 60vh;
+    max-height: 800px;
+    min-height: 600px;
+    width: 100vw;
+    background-color: var(--cor-3);
+    display: flex;
+}
+
+.left-side-secqf {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 5vw;
+}
+
+.left-side-secqf h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+
+.left-side-secqf p {
+    color: white;
+    line-height: 30px;
+}
+
+.left-side-secqf button {
+    height: 50px;
+    width: 150px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor-1);
+    color: var(--cor-3) !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*-----*/
+.right-side-secqf {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* PRODUCTS */
+    .product {
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        height: 90%;
+    }
+    .product-category {
+        padding: 0 30px;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: left;
+        color: var(--cor-1);
+    } 
+    .product-container {
+        padding: 0 30px;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }  
+    .product-container::-webkit-scrollbar {
+        display: none;
+    }  
+    .product-card {
+        flex: 0 0 auto;
+        width: 250px;
+        height: 450px;
+        margin-right: 20px;
+        background-color: var(--cor-1);
+        border-radius: 20px;
+    }  
+
+    .product-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }  
+    .product-thumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }   
+    .product-info {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }  
+    .product-brand {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: var(--cor-2);
+        text-align: center;
+    } 
+    .product-short-description {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        opacity: 0.9;
+        margin: 5px 0;
+        color: var(--cor-2);
+        text-align: center;
+    }       
+    .pre-btn, .nxt-btn {
+        border: none;
+        width: 10vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 8;
+        background-color: transparent;
+    }  
+    .pre-btn {
+        left: 0;
+        transform: rotate(180deg);
+    } 
+    .nxt-btn {
+        right: 0;
+    } 
+    .pre-btn img, .nxt-btn img {
+        height: 50px;
+        opacity: 0.2;
+    } 
+    .pre-btn:hover img, .nxt-btn:hover img {
+        opacity: 1;
+    } 
+    .collection-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }   
+    .collection {
+        position: relative;
+    }
+    .collection img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .collection p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-size: 50px;
+        text-transform: capitalize;
+    }
+    .collection:nth-child(3) {
+        grid-column: span 2;
+        margin-bottom: 10px;
+    }
+    /*-- FIM PRODUCTS -- */
+/*-- FIM SEC quem somos --*/
 #sec3 {
     height: 100vh;
     min-height: 820px;
