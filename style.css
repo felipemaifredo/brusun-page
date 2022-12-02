@@ -574,7 +574,7 @@ html {
         line-height: 20px;
         opacity: 0.9;
         margin: 5px 0;
-        color: var(--cor-2);
+        color: var(--cor-3);
         text-align: center;
     }       
     .pre-btn, .nxt-btn {
