@@ -504,8 +504,8 @@ html {
 .right-side-secqf {
     width: 55%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    
 }
 
     /* PRODUCTS */
@@ -516,11 +516,10 @@ html {
         height: 90%;
     }
     .product-category {
-        padding: 0 30px;
+        padding: 0 50px;
         font-size: 30px;
         font-weight: 500;
-        margin-bottom: 20px;
-        text-transform: uppercase;
+        margin-top: 40px;
         font-weight: bold;
         text-align: left;
         color: var(--cor-1);
@@ -1076,6 +1075,42 @@ footer img {
     }
     /* */
     /* FIM SEC 1 */
+    /* quem somos */
+    .secqf {
+        height: 1350px;
+        max-height: 1350px;
+        flex-direction: column;
+    }
+
+    .left-side-secqf h1 {
+        text-align: center;
+    }
+
+    .left-side-secqf {
+        width: 100%;
+        padding-right: 20px;
+        padding-top: 40px;
+        text-align: center !important;
+    }
+
+    .right-side-secqf {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-category {
+        text-align: center;
+    }
+
+    .product-card {
+        height: 450px;
+    }
+
+    .pre-btn, .nxt-btn {
+        display: none;
+    }
+
+    /* fim quem somos */
     /* SEC 2 */
     #sec2 {
         height: 1200px;
